@@ -1,0 +1,5 @@
+window,is_exposed,total_events,n_patients
+exposure,1,350,3000
+post,0,226,3000
+pre,0,134,3000
+washout,0,56,3000

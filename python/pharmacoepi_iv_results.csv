@@ -1,0 +1,6 @@
+Stage,Parameter,Value
+First stage,Formulary restriction → rosi use (F-stat),37.94
+First stage,Instrument relevance,Strong (F>10)
+Second stage,IV estimate (MACE per unit rosi use),72.3434
+Second stage,95% CI lower,12.2361
+Second stage,95% CI upper,132.4507

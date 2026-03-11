@@ -1,0 +1,16 @@
+Metric,Value
+Total person-quarters,2600000
+Intervention quarter,Q27 = 2010 Q4
+Pre-suspension MACE (rosi),11.392
+Post-suspension MACE (rosi),7.797
+ITS level change (β2),-3.3531
+ITS level change p-value,0.0
+DiD coefficient,-3.4124
+DiD p-value,0.0
+Parallel trends p-value,0.5239
+IV first-stage F-stat,37.94
+IV estimate,72.3434
+SCCS IRR (observed),1.262
+SCCS true IRR (calibration),1.43
+PASS min N (2-year),6500
+Joinpoint breakpoints,"['2006 Q2', '2013 Q2']"

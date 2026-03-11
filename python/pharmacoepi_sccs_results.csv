@@ -1,0 +1,11 @@
+Metric,Value
+Exposed person-months,36000.0
+Unexposed person-months,54000.0
+MACE events (exposed),350.0
+MACE events (unexposed),416.0
+Rate exposed (per month),0.009722
+Rate unexposed (per month),0.007704
+Observed IRR,1.262
+95% CI lower,1.133
+95% CI upper,1.401
+True IRR (calibration target),1.43

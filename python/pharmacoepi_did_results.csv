@@ -1,0 +1,6 @@
+Estimand,Value
+DiD coefficient (τ_DiD),-3.4124
+95% CI lower,-3.6999
+95% CI upper,-3.1248
+p-value,0.0
+Parallel trends test p-value,0.5239
