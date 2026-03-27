@@ -149,5 +149,10 @@ Run cells in order. All synthetic data are generated in the notebook — no exte
 
 ## Author
 
-**SM Hasan ul Bari** — Independent Health Economist & Pharmacoepidemiology Researcher  
-[github.com/sm-hasanulbari](https://github.com/sm-hasanulbari) · [ORCID: 0000-0002-5209-2029](https://orcid.org/0000-0002-5209-2029)
+**SM Hasan ul Bari**  
+MBBS · MSc Health Economics & Decision Modelling (Merit) · MSc Advanced Biostatistics & Epidemiology (Distinction) · Erasmus Mundus Scholar · WHO Implementation Research Fellow
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-hasanbari-blue?logo=linkedin)](https://www.linkedin.com/in/hasanbari/)
+[![Email](https://img.shields.io/badge/Email-dr.hasanulbari@gmail.com-red?logo=gmail)](mailto:dr.hasanulbari@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-sm--hasanulbari-black?logo=github)](https://github.com/sm-hasanulbari)
+[![ORCID](https://img.shields.io/badge/ORCID-0000--0002--5209--2029-green?logo=orcid)](https://orcid.org/0000-0002-5209-2029)
