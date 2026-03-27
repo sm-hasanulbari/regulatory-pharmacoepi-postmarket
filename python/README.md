@@ -11,7 +11,7 @@
 
 ## Research Question
 
-> \*\*Did the EMA's 2010 suspension of rosiglitazone causally reduce MACE rates in European T2D patients? A natural experiment using interrupted time series, difference-in-differences, and instrumental variable analysis.\*\*
+> \\\*\\\*Did the EMA's 2010 suspension of rosiglitazone causally reduce MACE rates in European T2D patients? A natural experiment using interrupted time series, difference-in-differences, and instrumental variable analysis.\\\*\\\*
 
 In September 2010, the European Medicines Agency suspended rosiglitazone (Avandia) following evidence of elevated cardiovascular risk — particularly myocardial infarction — first identified by Nissen \& Wolski (2007). This created a natural experiment: a sharp, externally imposed reduction in exposure that varied by region and prescriber, enabling causal estimation of the drug's cardiovascular impact using observational data.
 
@@ -63,13 +63,13 @@ Synthetic time-series cohort (N=50,000 T2D patients, 52 quarters: 2004 Q1–2016
 
 |Figure|Description|
 |-|-|
-|`pharmacoepi\_fig1\_rates.png`|Prescription rates and MACE trends 2004–2016|
-|`pharmacoepi\_fig2\_its.png`|ITS segmented regression with counterfactual projection|
-|`pharmacoepi\_fig3\_did.png`|DiD means plot and parallel trends test|
-|`pharmacoepi\_fig4\_iv.png`|IV first and second stage diagnostics|
-|`pharmacoepi\_fig5\_sccs.png`|SCCS exposure windows and cross-method IRR comparison|
-|`pharmacoepi\_fig6\_pass.png`|PASS power curves and minimum sample size|
-|`pharmacoepi\_fig7\_joinpoint\_comparison.png`|Joinpoint regression and cross-method comparison|
+|`pharmacoepi\\\_fig1\\\_rates.png`|Prescription rates and MACE trends 2004–2016|
+|`pharmacoepi\\\_fig2\\\_its.png`|ITS segmented regression with counterfactual projection|
+|`pharmacoepi\\\_fig3\\\_did.png`|DiD means plot and parallel trends test|
+|`pharmacoepi\\\_fig4\\\_iv.png`|IV first and second stage diagnostics|
+|`pharmacoepi\\\_fig5\\\_sccs.png`|SCCS exposure windows and cross-method IRR comparison|
+|`pharmacoepi\\\_fig6\\\_pass.png`|PASS power curves and minimum sample size|
+|`pharmacoepi\\\_fig7\\\_joinpoint\\\_comparison.png`|Joinpoint regression and cross-method comparison|
 
 \---
 
@@ -78,17 +78,17 @@ Synthetic time-series cohort (N=50,000 T2D patients, 52 quarters: 2004 Q1–2016
 ```
 regulatory-pharmacoepi-postmarket/
 ├── python/
-│   ├── pharmacoepi\_postmarket.ipynb     # Main notebook (10 cells)
-│   ├── pharmacoepi\_timeseries.csv       # Quarterly cohort data
-│   ├── pharmacoepi\_its\_results.csv      # ITS regression coefficients
-│   ├── pharmacoepi\_did\_results.csv      # DiD estimates
-│   ├── pharmacoepi\_iv\_results.csv       # IV/2SLS results
-│   ├── pharmacoepi\_sccs\_results.csv     # SCCS IRR summary
-│   ├── pharmacoepi\_sccs\_windows.csv     # SCCS window-level data
-│   ├── pharmacoepi\_pass\_design.csv      # Full PASS power grid
-│   ├── pharmacoepi\_pass\_min\_n.csv       # Minimum N by follow-up
-│   ├── pharmacoepi\_joinpoint.csv        # Joinpoint fitted values
-│   └── pharmacoepi\_kpi.csv             # Summary KPIs
+│   ├── pharmacoepi\\\_postmarket.ipynb     # Main notebook (10 cells)
+│   ├── pharmacoepi\\\_timeseries.csv       # Quarterly cohort data
+│   ├── pharmacoepi\\\_its\\\_results.csv      # ITS regression coefficients
+│   ├── pharmacoepi\\\_did\\\_results.csv      # DiD estimates
+│   ├── pharmacoepi\\\_iv\\\_results.csv       # IV/2SLS results
+│   ├── pharmacoepi\\\_sccs\\\_results.csv     # SCCS IRR summary
+│   ├── pharmacoepi\\\_sccs\\\_windows.csv     # SCCS window-level data
+│   ├── pharmacoepi\\\_pass\\\_design.csv      # Full PASS power grid
+│   ├── pharmacoepi\\\_pass\\\_min\\\_n.csv       # Minimum N by follow-up
+│   ├── pharmacoepi\\\_joinpoint.csv        # Joinpoint fitted values
+│   └── pharmacoepi\\\_kpi.csv             # Summary KPIs
 ├── requirements.txt
 └── README.md
 ```
@@ -101,7 +101,7 @@ regulatory-pharmacoepi-postmarket/
 git clone https://github.com/sm-hasanulbari/regulatory-pharmacoepi-postmarket.git
 cd regulatory-pharmacoepi-postmarket
 pip install -r requirements.txt
-jupyter notebook python/pharmacoepi\_postmarket.ipynb
+jupyter notebook python/pharmacoepi\\\_postmarket.ipynb
 ```
 
 Run cells in order. All data is generated synthetically in Cell 2 — no external downloads required. Total runtime \~2 minutes.
