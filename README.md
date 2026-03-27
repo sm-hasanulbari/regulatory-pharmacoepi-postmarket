@@ -64,15 +64,26 @@ No external data downloads are required. All synthetic data are generated progra
 
 ## Figures
 
-| Figure | Description |
-|---|---|
-| `pharmacoepi_fig1_rates.png` | Prescription rates and MACE trends 2004–2016 |
-| `pharmacoepi_fig2_its.png` | ITS segmented regression with counterfactual projection |
-| `pharmacoepi_fig3_did.png` | DiD means plot and parallel trends test |
-| `pharmacoepi_fig4_iv.png` | IV first and second stage diagnostics |
-| `pharmacoepi_fig5_sccs.png` | SCCS exposure windows and cross-method IRR comparison |
-| `pharmacoepi_fig6_pass.png` | PASS power curves and minimum sample size |
-| `pharmacoepi_fig7_joinpoint_comparison.png` | Joinpoint regression and cross-method comparison |
+**Figure 1 — Prescription rates and MACE trends 2004–2016**
+![Fig 1](outputs/figures/pharmacoepi_fig1_rates.png)
+
+**Figure 2 — ITS segmented regression with counterfactual projection**
+![Fig 2](outputs/figures/pharmacoepi_fig2_its.png)
+
+**Figure 3 — DiD means plot and parallel trends test**
+![Fig 3](outputs/figures/pharmacoepi_fig3_did.png)
+
+**Figure 4 — IV first and second stage diagnostics**
+![Fig 4](outputs/figures/pharmacoepi_fig4_iv.png)
+
+**Figure 5 — SCCS exposure windows and cross-method IRR comparison**
+![Fig 5](outputs/figures/pharmacoepi_fig5_sccs.png)
+
+**Figure 6 — PASS power curves and minimum sample size**
+![Fig 6](outputs/figures/pharmacoepi_fig6_pass.png)
+
+**Figure 7 — Joinpoint regression and cross-method comparison**
+![Fig 7](outputs/figures/pharmacoepi_fig7_joinpoint_comparison.png)
 
 ---
 
@@ -80,20 +91,25 @@ No external data downloads are required. All synthetic data are generated progra
 
 ```
 regulatory-pharmacoepi-postmarket/
-├── python/
-│   ├── pharmacoepi_postmarket.ipynb       # Main analysis notebook
-│   ├── pharmacoepi_timeseries.csv         # Quarterly cohort data
-│   ├── pharmacoepi_its_results.csv        # ITS regression coefficients
-│   ├── pharmacoepi_did_results.csv        # DiD estimates
-│   ├── pharmacoepi_iv_results.csv         # IV/2SLS results
-│   ├── pharmacoepi_sccs_results.csv       # SCCS IRR summary
-│   ├── pharmacoepi_sccs_windows.csv       # SCCS window-level data
-│   ├── pharmacoepi_pass_design.csv        # Full PASS power grid
-│   ├── pharmacoepi_pass_min_n.csv         # Minimum N by follow-up
-│   ├── pharmacoepi_joinpoint.csv          # Joinpoint fitted values
-│   ├── pharmacoepi_kpi.csv               # Summary KPIs
-│   ├── pharmacoepi_fig[1-7]_*.png         # Output figures
-│   └── requirements.txt
+├── notebooks/
+│   └── pharmacoepi_postmarket.ipynb       # Main analysis notebook
+├── data/
+│   └── pharmacoepi_timeseries.csv         # Quarterly cohort data (synthetic)
+├── outputs/
+│   ├── figures/
+│   │   └── pharmacoepi_fig[1-7]_*.png     # Publication-ready figures
+│   └── results/
+│       ├── pharmacoepi_its_results.csv    # ITS regression coefficients
+│       ├── pharmacoepi_did_results.csv    # DiD estimates
+│       ├── pharmacoepi_iv_results.csv     # IV/2SLS results
+│       ├── pharmacoepi_sccs_results.csv   # SCCS IRR summary
+│       ├── pharmacoepi_sccs_windows.csv   # SCCS window-level data
+│       ├── pharmacoepi_pass_design.csv    # Full PASS power grid
+│       ├── pharmacoepi_pass_min_n.csv     # Minimum N by follow-up
+│       ├── pharmacoepi_joinpoint.csv      # Joinpoint fitted values
+│       └── pharmacoepi_kpi.csv           # Summary KPIs
+├── .gitignore
+├── requirements.txt
 └── README.md
 ```
 
@@ -104,8 +120,8 @@ regulatory-pharmacoepi-postmarket/
 ```bash
 git clone https://github.com/sm-hasanulbari/regulatory-pharmacoepi-postmarket.git
 cd regulatory-pharmacoepi-postmarket
-pip install -r python/requirements.txt
-jupyter notebook python/pharmacoepi_postmarket.ipynb
+pip install -r requirements.txt
+jupyter notebook notebooks/pharmacoepi_postmarket.ipynb
 ```
 
 Run cells in order. All synthetic data are generated in the notebook — no external downloads required. Total runtime approximately 2 minutes.
